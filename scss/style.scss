@@ -1,0 +1,104 @@
+
+$body-color: #333;
+$font-color: #fff;
+$nav-bottom-color: #008ed6;
+$fas-icon-color: #008ed6;
+$fas-font-size: 30px;
+$fas-font-size2:  30px;
+
+body{
+    background-color:$body-color;
+    color: $font-color;
+}
+
+nav{
+    border-bottom: 3px solid $nav-bottom-color;
+    background-color: #292b2c;
+    opacity: 0.8;
+}
+
+.navbar pic-size{
+    width: 20px;
+}
+
+#home-section{
+    background: url('../img/home.jpg') no-repeat center top;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 700px;
+
+    .dark-overlay{
+        background: rgba(0,0,0,0.8);
+        min-height: 700px;
+    }
+
+    .fas{
+        background: $font-color;
+        color: $fas-icon-color;
+        padding: 5px;
+        font-size: $fas-font-size;
+        border-radius: 5px;
+    }
+
+    .card-form{
+        opacity: 0.8;
+    }
+
+    .home-inner{
+        padding-top: 120px;
+        padding-bottom: 70px;
+    }
+}
+
+#explore-main-section{
+    h3{
+        color:  $fas-icon-color;
+    }
+   .fas{
+       font-size: $fas-font-size2;
+       color: rgb(99, 179, 233);
+   }
+  span p{
+      font-size: 18px;
+  }
+
+  .innear:hover{
+    box-shadow: 5px 8px 10px rgb(93, 168, 190), -5px -5px 10px rgb(93, 168, 190);
+  }
+}
+
+#create-main-section{
+    .fas{
+        font-size: $fas-font-size2;
+        background: red;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    #home-section h4{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px){
+   #explore-main-section h3{
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+   }
+}
